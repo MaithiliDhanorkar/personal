@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    body{ 
+    background-color: black;
+           color: white;
+
+        }
+        nav{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgba(0, 0, 255, 0.482);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+            color: blue;
+        }
+        nav li {
+            list-style: none;
+            margin:0 25px;
+            
+        }
+        nav li a{
+            text-decoration: none;
+            color: white;
+         }
+
+         nav li a:hover{
+            color: blueviolet;
+            font-size: 1.2rem;
+         }
+
+
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-items: center;
+            justify-content: space-around;
+            margin: 110px ;
+        }
+        .leftSection{ 
+            margin: 70px;
+            width: 50%;
+            font-size: 3rem;
+        }
+        .rightSection{
+            
+            width: 30px;
+
+        }
+        .firstSection > div{
+            width: 30%;
+        }
+        .color{
+            color: blueviolet;
+        }
+        #element{
+            color: blueviolet;
+        }
+        main hr{
+            border:0;
+            height:1.2px;
+            margin:40px 84px;
+            background-color:blueviolet; ;
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin:auto;
+            
+        }
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="left"> Maithili Portfolio</div>
+        <div class="right">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Education</a></li>
+                <li><a href="/">Project</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <section class="firstSection">   
+            <div class="leftSection">Hi, My name is<span class="color"> Maithili </span> 
+                <div> and I am a Fullstack Developer </div> 
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="img.png" alt style="
+                 width:80%;
+                 margin:30px
+                " >
+                
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection"> 
+            <h1> Education </h1>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['.Net Developer ', 'Sql Developer'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
